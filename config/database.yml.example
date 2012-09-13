@@ -1,7 +1,7 @@
 development: &default
   adapter: postgresql
   database: copycopter_development
-  min_messages: WARNING
+  host: localhost
 
 test: &test
   <<: *default
