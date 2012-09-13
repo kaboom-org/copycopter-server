@@ -19,6 +19,9 @@ group :assets do
   gem "yui-compressor"
 end
 
+group :development do
+  gem 'capistrano-unicorn', :require => false
+end
 
 group :development, :test do
   gem 'foreman', '0.40.0'

@@ -25,14 +25,13 @@ set :deploy_to, "/var/www/#{application}/"
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup"
 
-# if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
+desc "setup symlinks"
+task :link_files do
+  run "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  run "ln -s #{shared_path}/config/rvmrc #{release_path}/.rvmrc"
+end
 
-# If you are using Passenger mod_rails uncomment this:
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
+# assets:precompile needs to know about s3 and the database
+before "deploy:finalize_update", "link_files"
+
+require 'capistrano-unicorn'
