@@ -7,6 +7,7 @@ gem 'formtastic', '2.0.2'
 gem 'htmldiff', '0.0.1'
 gem 'pg', '0.13.2'
 gem 'rails', '3.2.6'
+gem 'unicorn'
 gem 'thin', '1.3.1'
 gem 'yajl-ruby', '1.1.0', :require => 'yajl'
 gem "jquery-rails", "1.0.19"
