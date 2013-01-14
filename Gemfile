@@ -2,6 +2,7 @@ source :rubygems
 
 ruby '1.9.3'
 gem 'heroku'
+gem 'heroku_db_env'
 
 gem 'dynamic_form', '1.1.4'
 gem 'flutie', '1.3.3'

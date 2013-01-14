@@ -1,0 +1,6 @@
+development:
+  schema_search_path: copycopter
+test:
+  schema_search_path: copycopter
+production:
+  schema_search_path: copycopter

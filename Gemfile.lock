@@ -108,6 +108,7 @@ GEM
       rubyzip
     heroku-api (0.3.7)
       excon (~> 0.16.10)
+    heroku_db_env (0.0.2)
     highline (1.6.15)
     hike (1.2.1)
     htmldiff (0.0.1)
@@ -251,6 +252,7 @@ DEPENDENCIES
   foreman (= 0.40.0)
   formtastic (= 2.0.2)
   heroku
+  heroku_db_env
   htmldiff (= 0.0.1)
   jquery-rails (= 1.0.19)
   launchy (= 2.0.5)
