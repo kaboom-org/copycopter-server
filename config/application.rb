@@ -21,8 +21,8 @@ module Copycopter
       generate.test_framework :rspec
     end
 
-    config.middleware.delete ActionDispatch::ParamsParser
+    #config.middleware.delete ActionDispatch::ParamsParser
 
-    ActionDispatch::ParamsParser::DEFAULT_PARSERS.delete(Mime::XML)
+    #ActionDispatch::ParamsParser::DEFAULT_PARSERS.delete(Mime::XML)
   end
 end
