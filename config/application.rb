@@ -22,5 +22,7 @@ module Copycopter
     end
 
     config.middleware.delete ActionDispatch::ParamsParser
+
+    ActionDispatch::ParamsParser::DEFAULT_PARSERS.delete(Mime::XML)
   end
 end
