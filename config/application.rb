@@ -22,5 +22,6 @@ module Copycopter
     end
 
     config.middleware.delete ActionDispatch::ParamsParser
+
   end
 end
