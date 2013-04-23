@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/kaboom-org/heroku_db_env.git
+  revision: c6081cf3cb63fe90e3a937d971d0b1b0eb90e461
+  specs:
+    heroku_db_env (0.0.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -251,6 +257,7 @@ DEPENDENCIES
   foreman (= 0.40.0)
   formtastic (= 2.0.2)
   heroku
+  heroku_db_env!
   htmldiff (= 0.0.1)
   jquery-rails (= 1.0.19)
   launchy (= 2.0.5)
