@@ -1,8 +1,10 @@
-source :rubygems
+source 'https://rubygems.org'
 
 ruby '1.9.3'
 gem 'heroku'
 gem 'heroku_db_env', :git => 'git://github.com/kaboom-org/heroku_db_env.git'
+
+gem 'newrelic_rpm'
 
 gem 'dynamic_form', '1.1.4'
 gem 'flutie', '1.3.3'

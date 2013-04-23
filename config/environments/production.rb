@@ -1,4 +1,6 @@
 Copycopter::Application.configure do
+  require 'newrelic_rpm'
+
   config.action_controller.perform_caching = true
   config.action_dispatch.x_sendfile_header = 'X-Sendfile'
   config.active_support.deprecation = :notify
